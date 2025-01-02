@@ -121,6 +121,32 @@
             border-radius: 10px;
         }
 
+        .image-and-contact {
+            display: flex;
+            align-items: center; /* Zentriert das Bild und die Kontaktdaten vertikal */
+            justify-content: space-between; /* Verteilt den Platz zwischen den Elementen */
+            gap: 20px; /* Abstand zwischen Bild und Kontaktdaten */
+            margin-top: 20px;
+        }
+
+        .image img {
+            max-width: 300px; /* Maximale Breite des Bildes */
+            height: auto;
+            border: 1px solid #9e7c44;
+            border-radius: 10px;
+        }
+
+        .contact {
+            color: #9e7c44;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .contact h3 {
+            margin-bottom: 10px;
+            color: #9e7c44;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
@@ -163,6 +189,15 @@
 
             footer p {
                 font-size: 0.8rem;
+            }
+
+            .image-and-contact {
+                flex-direction: column; /* Bild und Kontaktdaten untereinander anordnen */
+                align-items: center; /* Zentriert beide Elemente */
+            }
+
+            .image img {
+                max-width: 100%; /* Für kleinere Bildschirme */
             }
         }
 
@@ -267,6 +302,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
