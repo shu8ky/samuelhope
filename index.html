@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -85,51 +85,17 @@
             padding: 0;
         }
 
-        ul ul {
+        ul ul { /* Unterpunkte */
             padding-left: 40px; /* Vergrößert den Abstand zur linken Seite */
-            margin-top: 10px;
+            margin-top: 10px; /* Fügt zusätzlichen Abstand nach oben hinzu */
         }
 
         ul ul li {
-            margin-bottom: 15px;
+            margin-bottom: 15px; /* Größerer Abstand zwischen den Unterpunkten */
         }
 
         ul > li {
-            margin-bottom: 10px;
-        }
-
-        .image-and-contact {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .image-and-contact .image {
-            flex: 0 0 300px;
-            max-width: 300px;
-        }
-
-        .image-and-contact .image img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #9e7c44;
-            border-radius: 10px;
-        }
-
-        .image-and-contact .contact {
-            flex: 1;
-        }
-
-        .contact h3 {
-            margin-top: 0;
-            font-size: 1.2rem;
-            color: #b18e53;
-        }
-
-        .contact p {
-            margin: 5px 0;
+            margin-bottom: 10px; /* Abstand zwischen Hauptpunkten */
         }
 
         footer {
@@ -146,15 +112,92 @@
             font-size: 0.9rem;
         }
 
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%; /* Bild passt sich der Bildschirmbreite an */
+            height: auto;
+            border: 1px solid #9e7c44;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .image-and-contact {
-                flex-direction: column;
-                align-items: center;
+            header h1 {
+                font-size: 2.5rem;
             }
 
-            .contact h3,
-            .contact p {
+            header .name {
+                font-size: 3rem;
+            }
+
+            nav ul {
+                flex-direction: column;
                 text-align: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            nav ul li a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            ul ul {
+                padding-left: 20px; /* Weniger Abstand für mobile Geräte */
+            }
+
+            footer {
+                padding: 10px;
+            }
+
+            footer p {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header .name {
+                font-size: 2.5rem;
+            }
+
+            nav ul li a {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            ul ul {
+                padding-left: 10px;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            footer p {
+                font-size: 0.7rem;
             }
         }
     </style>
